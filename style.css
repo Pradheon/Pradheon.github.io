@@ -1,0 +1,12 @@
+BODY {
+  width: 100%;
+  bg-image: url("");
+  bg-repeat: no-repeat;
+  bg-attachment: fixed;
+  bg-size: cover;
+  bg-color: #ffd4d4;
+  color: #444;
+  margin: 0;
+  font-family: 'Lato', 'sans-serif';
+  line-height: 1.6em;
+}
