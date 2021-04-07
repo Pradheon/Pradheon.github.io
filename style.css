@@ -36,6 +36,10 @@ textarea {
   resize: none;
 }
 
+small {
+  font-size: inherit;
+}
+
 .banner-divider {
   position: relative;
   background: #900;
@@ -62,4 +66,16 @@ textarea {
   position: relative;
   overflow: hidden;
   padding: 20px;
+}
+
+.copyright,
+.footerNotice {
+  color: #A57A43;
+  font-size: 1.1rem;
+  margin: 0;
+  text-shadow:
+    -1px -1px 1px #fff,
+    -1px 1px 1px #fff,
+    1px -1px 1px #fff,
+    1px 1px 1px #fff;
 }
