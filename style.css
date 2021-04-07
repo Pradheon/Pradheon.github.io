@@ -10,9 +10,3 @@ BODY {
   font-family: 'Lato', 'sans-serif';
   line-height: 1.6em;
 }
-
-.footer {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-}
