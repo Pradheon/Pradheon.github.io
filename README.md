@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Pradheon`, `Pradheon.github.io`, `twitter_handle`, `joshansrai`, `gmail.com`, `joshan.s.rai`, `Pradheon's Personal Portfolio`, `Personal portfolio project built from the ground up with my web development skillset.`
+<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Pradheon`, `Pradheon.github.io`, `twitter_handle`, `joshansrai`, `gmail.com`, `joshan.s.rai`, `Pradheon's Personal Portfolio`, `Personal portfolio project built from the ground up with my web development skillset.` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,7 +196,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - <!--[@twitter_handle](https://twitter.com/twitter_handle)--> - joshan.s.rai@gmail.com
+Your Name - <!--[@twitter_handle](https://twitter.com/twitter_handle)-->joshan.s.rai@gmail.com
 
 Project Link: [https://github.com/Pradheon/Pradheon.github.io](https://github.com/Pradheon/Pradheon.github.io)
 
