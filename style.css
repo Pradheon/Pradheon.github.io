@@ -3,7 +3,7 @@ body {
 	background: linear-gradient(to top right, #7bb1ff, #a6aaff, #f1b9f3, #9dfdfd, #7bb1ff, #a6aaff, #f1b9f3, #9dfdfd, #7bb1ff);
 	background-size: 500% 500%;
 	animation: bg-move 50s infinite linear;
-	height: 100vh;
+	height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
