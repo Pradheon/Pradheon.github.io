@@ -143,8 +143,8 @@ footer {
 *   Hero
 ****************************************************/
 #hero {
-    height: 70vh;
-    background: transparent url("/assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg") center 0 fixed no-repeat;
+    height: 104vh;
+    background: transparent url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg") center 0 fixed no-repeat;
     background-attachment: fixed;
     background-size: cover;
     opacity: 1;
@@ -162,9 +162,21 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 16%;
+    top: 24%;
     left: 15%;
     padding: 16px;
+}
+
+#hero h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+#hero h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 .custom-shape-divider-bottom-1700629837 {
