@@ -268,6 +268,45 @@ footer {
 }
 
 /****************************************************
+*   Contact
+****************************************************/
+
+#contact {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+#contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#contact .telephone-information, #contact .email-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .telephone-information svg, #contact .email-information svg {
+    width: 28px;
+    height: 28px;
+}
+
+#contact .telephone-information a, #contact .email-information a {
+    color: whitesmoke;
+}
+
+/****************************************************
 *   Footer
 ****************************************************/
 footer .menu-wrapper {
