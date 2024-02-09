@@ -144,6 +144,57 @@ footer {
 }
 
 /****************************************************
+*   Socials
+****************************************************/
+
+#socials {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    top: 25%;
+}
+
+#socials .container {
+    position: relative;
+    width: 75px;
+    height: 101px;
+}
+
+#socials .linkedin-container,
+#socials .github-container {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    transition: width 1s;
+    box-shadow: 1px 1px 7px black;
+}
+
+#socials .linkedin-container:hover,
+#socials .github-container:hover {
+    width: 95%;
+}
+
+#socials .linkedin-container {
+    background-color: #0077B5;
+    top: 0;
+}
+
+#socials .github-container {
+    background-color: #333;
+    bottom: 0;
+}
+
+#socials .linkedin-container svg,
+#socials .github-container svg {
+    width: 36px;
+    height: 36px;
+    padding-top: 7px;
+    padding-left: 7px;
+    color: #FFFFFF;
+}
+
+/****************************************************
 *   Hero
 ****************************************************/
 #hero {
@@ -361,6 +412,12 @@ footer {
 #education .text li, #about .text li {
     margin: 10px 0;
 }
+
+/****************************************************
+*   Projects and Extracurriculars
+****************************************************/
+
+
 
 /****************************************************
 *   Affiliates and Sponsors
