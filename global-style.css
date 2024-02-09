@@ -242,3 +242,33 @@ footer .copyright p {
     padding: 0;
     margin: 0;
 }
+
+footer .aside {
+    position: fixed;
+    z-index: 10;
+    right: 15%;
+    top: 25px;
+    width: 130px;
+}
+
+.aside .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside .content .active, .aside .active a {
+    font-weight: 900;
+    color: whitesmoke !important;
+}
+
+.aside .content a,
+.aside .content a:visited, 
+.aside .content p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.aside .content a:hover {
+    color: whitesmoke;
+}
