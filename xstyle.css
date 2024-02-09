@@ -221,7 +221,67 @@
 *   Projects and Extracurriculars
 ****************************************************/
 
+#extracurriculars {
+    position: relative;
+}
 
+#extracurriculars .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#extracurriculars .ext,
+#extracurriculars .ext-2,
+#extracurriculars .ext-3,
+#extracurriculars .ext-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#extracurriculars .ext-2,
+#extracurriculars .ext-3,
+#extracurriculars .ext-4 {
+    margin-top: 25px;
+}
+
+#extracurriculars h2, #extracurriculars p {
+    margin: 1px 0;
+}
+
+#extracurriculars .text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#extracurriculars ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#extracurriculars .ext-1  {
+    margin-bottom: 40px;
+}
+
+#extracurriculars ul li {
+    margin: 5px 0;
+}
+
+#extracurriculars a, 
+#extracurriculars h2, 
+#extracurriculars h2:visited {
+    display: flex;
+    text-decoration-color: #F35552;
+    color: #F35552;
+}
+
+#extracurriculars a:hover, 
+#extracurriculars h2:hover {
+    color: #9B0000;
+    text-decoration-color: #9B0000;
+}
 
 /****************************************************
 *   Affiliates and Sponsors
