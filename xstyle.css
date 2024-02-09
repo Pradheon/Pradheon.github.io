@@ -285,6 +285,40 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+#experience .job-1,
+#experience .job-2,
+#experience .job-3,
+#experience .job-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience .job-2,
+#experience .job-3,
+#experience .job-4 {
+    margin-top: 10px;
+}
+
+#experience h2, #experience p {
+    margin: 1px 0;
+}
+
+#experience .company-duration-text, #experience .position-location-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#experience ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#experience ul li {
+    margin: 5px 0;
 }
 
 /****************************************************
