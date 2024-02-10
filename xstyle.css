@@ -218,69 +218,97 @@
 }
 
 /****************************************************
-*   Projects and Extracurriculars
+*   Projects and certifications
 ****************************************************/
 
-#extracurriculars {
+#certifications {
     position: relative;
 }
 
-#extracurriculars .container {
+#certifications .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#extracurriculars .ext,
-#extracurriculars .ext-2,
-#extracurriculars .ext-3,
-#extracurriculars .ext-4 {
+#certifications .cert,
+#certifications .cert-2,
+#certifications .cert-3,
+#certifications .cert-4 {
     display: flex;
     flex-direction: column;
 }
 
-#extracurriculars .ext-2,
-#extracurriculars .ext-3,
-#extracurriculars .ext-4 {
+#certifications .cert-2,
+#certifications .cert-3,
+#certifications .cert-4 {
     margin-top: 25px;
 }
 
-#extracurriculars h2, #extracurriculars p {
+#certifications h2, #certifications p {
     margin: 1px 0;
 }
 
-#extracurriculars .text {
+#certifications .text {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
-#extracurriculars ul {
+#certifications ul {
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-#extracurriculars .ext-1  {
+#certifications .cert-1  {
     margin-bottom: 40px;
 }
 
-#extracurriculars ul li {
+#certifications ul li {
     margin: 5px 0;
 }
 
-#extracurriculars a, 
-#extracurriculars h2, 
-#extracurriculars h2:visited {
+#certifications a, 
+#certifications h2, 
+#certifications h2:visited {
     display: flex;
     text-decoration-color: #F35552;
     color: #F35552;
 }
 
-#extracurriculars a:hover, 
-#extracurriculars h2:hover {
+#certifications a:hover, 
+#certifications h2:hover {
     color: #9B0000;
     text-decoration-color: #9B0000;
+}
+
+/****************************************************
+*   Skills and Interests
+****************************************************/
+
+#skills-interests {
+    position: relative;
+}
+
+#skills-interests h1,
+#skills-interests h2 {
+    text-align: center;
+}
+
+#skills-interests .wrapper {
+    display: flex;
+}
+
+#skills-interests .skills-wrapper,
+#skills-interests .interests-wrapper {
+    width: 50%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#skills-interests .skills-wrapper {
+    border-right: #333 solid;
 }
 
 /****************************************************
