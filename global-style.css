@@ -272,3 +272,35 @@ footer .aside {
 .aside .content a:hover {
     color: whitesmoke;
 }
+
+/** lightbox **/
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    z-index: 100;
+}
+
+#lightbox .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#lightbox .content {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+}
+
+#lightbox .content a {
+    color: lightslategray;
+}
+
+#lightbox .content a:hover {
+    color: whitesmoke;
+}

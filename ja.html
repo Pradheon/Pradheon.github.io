@@ -3,7 +3,7 @@
     The full license and notice may be viewed in the included LICENSE.txt file
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="global-style.css">
     <link rel="stylesheet" href="xstyle.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Header -->
@@ -32,6 +37,15 @@
         </div>
     </nav>
     <main>
+        <!-- Lightbox -->
+        <div id="lightbox">
+            <div class="container">
+                <div class="content">
+                    <h1>近日公開</h1>
+                    <a href="xindex.html">«グローバルサイトへ戻る</a>
+                </div>
+            </div>
+        </div>
         <!-- Socials -->
         <div id="socials">
             <div class="container">
@@ -113,7 +127,7 @@
                 <div class="placeholder-content">
                     <div class="job-1">
                         <div class="company-duration-text">
-                            <h2>Freelance</h2>
+                            <h2>フリーランサー</h2>
                             <p><b>Jun. 2020 - Present</b></p>
                         </div>
                         <div class="position-location-text">
@@ -121,9 +135,8 @@
                             <p><em>Salida, CA</em></p>
                         </div>
                         <ul>
-                            <li>Migrated approximately 505,000 web pages from Drupal 7 to Drupal 9, which increased accessibility and reduced bounce rate daily by 20%</li>
-                            <li>Developed batch file modification, Google Analytics reports, and form processing automations utilizing Bash Scripts, Google Apps Scripts, and Power Automate, expediting processing 100k files daily</li>
-                            <li>Audited and modified 10,000 department webpages for accessibility compliance and Search Engine Optimization, which improved click-through rate and accessibility by 40%</li>
+                            <li>地元企業向けのホームセンター、写真、小売ウェブサイトを設計し、クリックスルー率を25%向上させ、SEOランク</li>
+                            <li>在庫管理、電子商取引、マーケティング戦略を備えた地元企業向けのウェブサイトを開発し、四半期あたり10,000ドルの利益を増加させました</li>
                         </ul>
                     </div>
                     <div class="job-2">
@@ -132,12 +145,12 @@
                             <p><b>Dec. 2023 - Jan. 2024</b></p>
                         </div>
                         <div class="position-location-text">
-                            <p><em>FC Associate</em></p>
+                            <p><em>季節のフルフィルメントアソシエイト</em></p>
                             <p><em>Tracy, CA</em></p>
                         </div>
                         <ul>
-                            <li>Managed 155 customer orders an hour, leading to a sales increase of 15% annually and expedited shipping of over 150,000 orders daily</li>
-                            <li>Prepared more than 50 inventory management devices per shift, improving the rate of production by 34%</li>
+                            <li>1時間に155件の顧客注文を管理し、年間15%の売上増加につながり、毎日150,000件以上の注文の迅速な出荷につながりました</li>
+                            <li>シフトごとに50台以上の在庫管理装置を準備し、生産率を34%向上させました</li>
                         </ul>
                     </div>
                     <div class="job-3">
@@ -146,27 +159,27 @@
                             <p><b>Mar. 2023 - Sep. 2023</b></p>
                         </div>
                         <div class="position-location-text">
-                            <p><em>Web Assistant</em></p>
+                            <p><em>ウェブアシスタント</em></p>
                             <p><em>Turlock, CA</em></p>
                         </div>
                         <ul>
-                            <li>Migrated approximately 505,000 web pages from Drupal 7 to Drupal 9, which increased accessibility and reduced bounce rate daily by 20%</li>
-                            <li>Developed batch file modification, Google Analytics reports, and form processing automations utilizing Bash Scripts, Google Apps Scripts, and Power Automate, expediting processing 100k files daily</li>
-                            <li>Audited and modified 10,000 department webpages for accessibility compliance and Search Engine Optimization, which improved click-through rate and accessibility by 40%</li>
+                            <li>約505,000のWebページをDrupal 7からDrupal 9に移行し、アクセシビリティが向上し、毎日の直帰率を20%削減しました</li>
+                            <li>Bash Scripts、Google Apps Scripts、Power Automateを利用したバッチファイル変更、Google Analyticsレポート、およびフォーム処理の自動化を開発し、毎日100,000ファイルの処理を迅速化しました</li>
+                            <li>アクセシビリティコンプライアンスと検索エンジン最適化のために10,000の部門ウェブページを監査および変更し、クリックスルー率とアクセシビリティを40%向上させました</li>
                         </ul>
                     </div>
                     <div class="job-3">
                         <div class="company-duration-text">
-                            <h2>Freelance</h2>
+                            <h2>フリーランサー</h2>
                             <p><b>Feb. 2021 - Aug. 2022</b></p>
                         </div>
                         <div class="position-location-text">
-                            <p><em>IT Support Technician</em></p>
+                            <p><em>ITサポート技術者</em></p>
                             <p><em>Salida, CA</em></p>
                         </div>
                         <ul>
-                            <li>Resolved network and device software/hardware issues on approximately 2,100 iOS, macOS, Windows, Android, and router/modem devices, which lead to an increased customer satisfaction rate by 35%</li>
-                            <li>Trained approximately 210 new users on the usage of smart devices and applications, increasing customer confidence and business sales by 18%</li>
+                            <li>約2,100台のiOS、macOS、Windows、Android、およびルーター/モデムデバイスでネットワークおよびデバイスのソフトウェア/ハードウェアの問題を解決し、顧客満足度が35%向上しました</li>
+                            <li>スマートデバイスとアプリケーションの使用について約210人の新規ユーザーを訓練し、顧客の信頼とビジネスセールスを18%増加させた</li>
                         </ul>
                     </div>
                 </div>
@@ -210,72 +223,72 @@
             </div>
         </section>
         <hr>
-        <!-- Projects and Extracurriculars -->
-        <section id="extracurriculars" class="padding-lr-16p">
+        <!-- Projects and certifications -->
+        <section id="certifications" class="padding-lr-16p">
             <div class="container margin-b-40p">
-                <h1>Extracurriculars</h1>
+                <h1>認証</h1>
                 <div class="placeholder-content">
-                    <div class="ext-1">
+                    <div class="cert-1">
                         <div class="text">
                             <h2>
                                 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_CDRJwGfzJxebuYNg4_1700617092094_completion_certificate.pdf" 
                                 target="_blank" aria-label="J.P. Morgan Software Engineering Job Simulation Certificate" rel="noopener">
-                                    J.P. Morgan Software Engineering Job Simulation on Forage
+                                    J.P.飼料に関するモーガンソフトウェアエンジニアリングジョブシミュレーション
                                 </a>
                             </h2>
                             <p><b>Nov. 2023</b></p>
                         </div>
                         <ul>
-                            <li>Set up a local dev environment by downloading the necessary files, tools and dependencies</li>
-                            <li>Fixed broken files in the repository to make web application output correctly</li>
-                            <li>Used JPMorgan Chase's open source library called Perspective to generate a live graph that displays a data feed in a clear and visually appealing way for traders to monitor</li>
+                            <li>必要なファイル、ツール、依存関係をダウンロードして、ローカル開発環境を設定する</li>
+                            <li>ウェブアプリケーションを正しく出力するために、リポジトリ内の壊れたファイルを修正しました</li>
+                            <li>JPモルガン・チェースのパースペクティブと呼ばれるオープンソースライブラリを使用して、トレーダーが監視できる明確で視覚的に魅力的な方法でデータフィードを表示するライブグラフを生成しました</li>
                         </ul>
                     </div>
-                    <div class="ext-2">
+                    <div class="cert-2">
                         <div class="text">
                             <h2>
                                 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_CDRJwGfzJxebuYNg4_1683354515292_completion_certificate.pdf" 
                                 target="_blank" aria-label="Mastercard Cybersecurity virtual experience program Certificate" rel="noopener">
-                                    Mastercard Cybersecurity virtual experience program on Forage
+                                    ForageのMastercardサイバーセキュリティ仮想体験プログラム
                                 </a>
                             </h2>
                             <p><b>May 2023</b></p>
                         </div>
                         <ul>
-                            <li>Completed a job simulation where I served as an analyst on Mastercard's Security Awareness Team</li>
-                            <li>Helped identify and report security threats such as phishing</li>
-                            <li>Analyzed and identified which areas of the business needed more robust security training and implemented training courses and procedures for those teams</li>
+                            <li>Mastercardのセキュリティ認識チームのアナリストを務めたジョブシミュレーションを完了しました</li>
+                            <li>フィッシングなどのセキュリティ上の脅威を特定し、報告するのに役立ちました</li>
+                            <li>ビジネスのどの分野がより堅牢なセキュリティトレーニングを必要とするかを分析して特定し、それらのチームにトレーニングコースと手順を実施しました</li>
                         </ul>
                     </div>
-                    <div class="ext-3">
+                    <div class="cert-3">
                         <div class="text">
                             <h2>
                                 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Electronic%20Arts/a77WE3de8qrxWferQ_Electronic%20Arts_CDRJwGfzJxebuYNg4_1683344202132_completion_certificate.pdf" 
                                 target="_blank" aria-label="Electronic Arts Software Engineering virtual experience program Certificate" rel="noopener">
-                                    Electronic Arts Software Engineering virtual experience program on Forage
+                                    フォージに関するエレクトロニック・アーツ・ソフトウェア・エンジニアリングのバーチャル体験プログラム
                                 </a>
                             </h2>
                             <p><b>May 2023</b></p>
                         </div>
                         <ul>
-                            <li>Proposed a new feature for the Sims 4 and wrote a Feature Proposal describing it to other stakeholders</li>
-                            <li>Built a class diagram and created a header file in C++ with class definitions for each object</li>
-                            <li>Patched a bugfix and optimized the Sims 4 codebase by implementing an improved data structure</li>
+                            <li>シムズ4の新機能を提案し、他の利害関係者に説明する機能提案書を書いた</li>
+                            <li>クラス図を構築し、各オブジェクトのクラス定義を含むC++でヘッダーファイルを作成しました</li>
+                            <li>バグ修正にパッチを適用し、改善されたデータ構造を実装してSims 4のコードベースを最適化しました</li>
                         </ul>
                     </div>
-                    <div class="ext-4">
+                    <div class="cert-4">
                         <div class="text">
                             <h2>
                                 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Visa/8ebZgyZyLA6h5gyqt_Visa_CDRJwGfzJxebuYNg4_1684399403802_completion_certificate.pdf" 
                                 target="_blank" aria-label="Visa Token Service Technology virtual experience program Certificate" rel="noopener">
-                                    Visa Token Service Technology virtual experience program on Forage
+                                    ForageのVisa Token Service Technologyバーチャル体験プログラム
                                 </a>
                             </h2>
                             <p><b>May 2023</b></p>
                         </div>
                         <ul>
-                            <li>Programmed a Python script utilizing the Visa Card Authentication API to confirm the validity of incoming Visa transaction requests</li>
-                            <li>Identified and selected Visa APIs to solve various use cases and cardholders' matters</li>
+                            <li>Visa Card Authentication APIを使用してPythonスクリプトをプログラムし、着信Visaトランザクションリクエストの有効性を確認しました</li>
+                            <li>さまざまなユースケースやカード所有者の問題を解決するために、Visa APIを特定し、選択しました</li>
                         </ul>
                     </div>
                 </div>
