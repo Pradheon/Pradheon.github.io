@@ -3,6 +3,7 @@
 ****************************************************/
 #hero {
     height: 104vh;
+    width: 100vw;
     background: transparent url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg") center 0 fixed no-repeat;
     background-attachment: fixed;
     background-size: cover;

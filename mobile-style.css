@@ -7,6 +7,10 @@
         font-size: 14px;
     }
 
+    #hero {
+        width: 100vw;
+    }
+
     #education .content {
         flex-direction: column;
         gap: 20px;
