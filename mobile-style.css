@@ -9,6 +9,9 @@
 
     #hero {
         width: 100vw;
+        background: transparent url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg") center 0 no-repeat;
+        background-attachment:unset;
+        background-size: cover;
     }
 
     #education .content {
