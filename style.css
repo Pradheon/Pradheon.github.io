@@ -1,35 +1,311 @@
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background: linear-gradient(to top right, #7bb1ff, #a6aaff, #f1b9f3, #9dfdfd, #7bb1ff, #a6aaff, #f1b9f3, #9dfdfd, #7bb1ff);
-	background-size: 500% 500%;
-	animation: bg-move 50s infinite linear;
-	height: 95vh;
+/****************************************************
+*   Hero
+****************************************************/
+#hero {
+    height: 104vh;
+    background: transparent url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg") center 0 fixed no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+#hero .container .text {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    padding: 16px;
+}
+
+#hero h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+#hero h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.custom-shape-divider-bottom-1700629837 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1700629837 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1700629837 .shape-fill {
+    fill: #181A1B;
+}
+
+/** scroll animation **/
+.scroll {
+    position: absolute;
+    z-index: 10;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity .2s;
+    height: 14vh;
+}
+
+.scroll .mouse {
+    margin-left: 1px;
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(2px 2px 6px rgba(51,51,51,.6));
+}
+
+.scroll .line {
+    overflow: hidden;
+    margin-top: 0.2rem;
+    width: 2px;
+    height: 100%;
+    filter: drop-shadow(2px 2px 6px rgba(51,51,51,.6));
+}
+
+.scroll .line::after {
+    content: "";
+    display: block;
+    background: #fff;
+    -webkit-animation: scroll-line-move 2s 0s infinite;
+    animation: scroll-line-move 2s 0s infinite;
+    height: 100%;
+}
+
+@keyframes scroll-line-move {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    51% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(105%);
+        transform: translateY(105%);
+    }
+}
+
+/****************************************************
+*   About
+****************************************************/
+#about {
+    position: relative;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/****************************************************
+*   Professional Experience
+****************************************************/
+#experience {
+    position: relative;
+}
+
+#experience .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#experience .job-1,
+#experience .job-2,
+#experience .job-3,
+#experience .job-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience .job-2,
+#experience .job-3,
+#experience .job-4 {
+    margin-top: 10px;
+}
+
+#experience h2, #experience p {
+    margin: 1px 0;
+}
+
+#experience .company-duration-text, #experience .position-location-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#experience ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#experience ul li {
+    margin: 5px 0;
+}
+
+/****************************************************
+*   Education
+****************************************************/
+#education {
+    position: relative;
+}
+
+#education .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#education .content {
+    display: flex;
+    gap: 64px;
+}
+
+#education .image {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 40%; 
 }
 
-.hero {
+#education .image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#education .text {
+    width: 50%;
+    align-self: center;
+}
+
+#education .text li, #about .text li {
+    margin: 10px 0;
+}
+
+/****************************************************
+*   Projects
+****************************************************/
+
+#projects {
+    position: relative;
+}
+
+#projects h2 {
+    font-size: 22px;
+    color: whitesmoke;
+    margin: 0;
+}
+
+#projects p {
+    font-size: 14px;
+    color: lightgray;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+#projects .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 
-.hero h1 {
-    color: azure;
-    font-size: 150px;
-    font-weight: 800;
-    margin-bottom: 80px;
-    text-shadow: 0px 10px 10px rgba(83,150,212,.23);
-}
-
-.container {
+#projects .content {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
 }
 
-.container a {
+#projects .row-1,
+#projects .row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#projects .project-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 47%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px lightslategray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+#projects .project-1 {
+    background-image: url("assets/images/jsk-photography.png");
+}
+
+#projects .project-2 {
+    background-image: url("assets/images/stonecrafters.png");
+}
+
+#projects .project-3 {
+    background-image: url("assets/images/odin-landing-page.png");
+}
+
+#projects .project-4 {
+    background-image: url("assets/images/edutainment.png");
+}
+
+#projects .project-container:hover {
+    background-size: 120%;
+}
+
+#projects .description {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 0 0 15px 15px;
+}
+
+#projects .github-btn {
     color: azure;
     font-size: 20px;
     font-weight: 500;
@@ -39,41 +315,148 @@ body {
     box-shadow: 0px 10px 10px rgba(83,150,212,.23);
     text-shadow: 0px 10px 10px rgba(83,150,212,.23);
     background-color: rgba(140, 140, 140, 0.2);
+    margin-top: 40px;
 }
 
-.container a:hover {
+#projects .github-btn:hover {
     color: black;
     background-color: rgba(240, 255, 255, 0.9);
 }
 
-@keyframes bg-move {
-    0% {
-        background-position: 250% -250%;
-    }
-    100% {
-        background-position: -250% 250%;
-    }
+/****************************************************
+*   Certifications
+****************************************************/
+
+#certifications {
+    position: relative;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#certifications .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
-    .hero h1 {
-        font-size: 45px;
-        margin-bottom: 40px;
-    }
-    .container {
-        flex-direction: column;
-        gap: 30px;
-    }
+#certifications .cert,
+#certifications .cert-2,
+#certifications .cert-3,
+#certifications .cert-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+#certifications .cert-2,
+#certifications .cert-3,
+#certifications .cert-4 {
+    margin-top: 25px;
+}
+
+#certifications h2, #certifications p {
+    margin: 1px 0;
+}
+
+#certifications .text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#certifications ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#certifications .cert-1  {
+    margin-bottom: 40px;
+}
+
+#certifications ul li {
+    margin: 5px 0;
+}
+
+#certifications a, 
+#certifications h2, 
+#certifications h2:visited {
+    display: flex;
+    text-decoration-color: #F35552;
+    color: #F35552;
+}
+
+#certifications a:hover, 
+#certifications h2:hover {
+    color: #9B0000;
+    text-decoration-color: #9B0000;
+}
+
+/****************************************************
+*   Skills and Interests
+****************************************************/
+
+#skills-interests {
+    position: relative;
+}
+
+#skills-interests h1,
+#skills-interests h2 {
+    text-align: center;
+}
+
+#skills-interests .wrapper {
+    display: flex;
+}
+
+#skills-interests .skills-wrapper,
+#skills-interests .interests-wrapper {
+    width: 50%;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#skills-interests .skills-wrapper {
+    border-right: #333 solid;
+}
+
+/****************************************************
+*   Affiliates and Sponsors
+****************************************************/
+
+
+
+/****************************************************
+*   Contact
+****************************************************/
+
+#contact {
+    position: relative;
+}
+
+#contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#contact .telephone-information, #contact .email-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .telephone-information svg, #contact .email-information svg {
+    width: 28px;
+    height: 28px;
+}
+
+#contact .telephone-information a, #contact .email-information a {
+    color: whitesmoke;
 }

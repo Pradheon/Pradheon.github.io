@@ -1,0 +1,93 @@
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #education .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #education .image {
+        width: 100%; 
+    }
+
+    #education .text {
+        width: 100%;
+    }
+
+    /** projects **/
+    #projects .content {
+        height: auto;
+        gap: 30px;
+    }
+
+    #projects .row-1,
+    #projects .row-2 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #projects .project-container {
+        width: 100%;
+        height: 180px;
+        background-size: 120%;
+    }
+
+    #projects h2 {
+        font-size: 18px;
+    }
+
+    #projects p {
+        font-size: 12px;
+    }
+
+    /** skills and interests **/
+    #skills-interests .wrapper {
+        flex-direction: column;
+    }
+
+    #skills-interests .skills-wrapper,
+    #skills-interests .interests-wrapper {
+        width: 100%;
+    }
+
+    #skills-interests .skills-wrapper {
+        border-right: none;
+        border-bottom: #333 solid;
+    }
+
+    /** contact **/
+    #contact .contact-information {
+        flex-direction: column;
+    }
+
+    /** affiliates **/
+    #affiliates .bms-container {
+        flex-direction: column;
+    }
+
+    #affiliates .bms-container img {
+        height: 80px;
+        width: 80px;
+    }
+
+    #affiliates .bms-container .content {
+        padding: 0;
+        width: 100%;
+    }
+
+    #affiliates h1 {
+        font-size: 32px;
+    }
+
+    /** aside **/
+    footer .aside {
+        right: 12px;
+        top: 0;
+    }
+}
