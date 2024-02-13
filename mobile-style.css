@@ -1,4 +1,8 @@
 @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 36px;
+    }
+    
     h2 {
         font-size: 18px;
     }
@@ -7,11 +11,23 @@
         font-size: 14px;
     }
 
+    .global-nav .logo {
+        font-size: 18px;
+    }
+
     #hero {
         width: 100vw;
         background: transparent url("/assets/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg") center 0 no-repeat;
         background-attachment:unset;
         background-size: cover;
+    }
+
+    #hero h1 {
+        font-size: 42px;
+    }
+
+    #hero h2 {
+        font-size: 30px;
     }
 
     #education .content {
