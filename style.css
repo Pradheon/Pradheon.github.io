@@ -339,17 +339,12 @@
     flex-direction: column;
 }
 
-#certifications .cert,
-#certifications .cert-2,
-#certifications .cert-3,
-#certifications .cert-4 {
+#certifications .cert{
     display: flex;
     flex-direction: column;
 }
 
-#certifications .cert-2,
-#certifications .cert-3,
-#certifications .cert-4 {
+#certifications .margin-t-25p {
     margin-top: 25px;
 }
 
@@ -366,10 +361,6 @@
 #certifications ul {
     margin-top: 10px;
     margin-bottom: 15px;
-}
-
-#certifications .cert-1  {
-    margin-bottom: 40px;
 }
 
 #certifications ul li {
