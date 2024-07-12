@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Work Experience | Joshan S. Rai</title>
+    <link href="../output.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+    <link rel="manifest" href="../img/icons/site.webmanifest">
+    <link rel="shortcut icon" href="../img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .stroke-path {
+            stroke-dasharray: 63;
+            stroke-dashoffset: 63;
+            transition: stroke-dashoffset .6s cubic-bezier(0, 0.5, 0.35, 1);
+        }
+    
+        .group:hover .stroke-path {
+            stroke-dashoffset: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="bg-white z-[calc(100)]">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="index.html" class="-m-1.5 p-1. font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+              <p>Joshan S. Rai</p>
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" id="mobile-menu-button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="../index.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500">Home</a>
+            <a href="../experience.html" class="text-sm font-semibold leading-6 text-sky-500 underline transition duration-300 ease-in-out">Experience</a>
+            <a href="../academia.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Academia</a>
+            <a href="../about.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">About</a>
+            <a href="../contact.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Contact</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="relative">
+              <button id="language-dropdown-button" type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+                Language
+                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="language-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition duration-500 ease-in-out">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="../index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">English</a>
+                  <a href="../coming-soon-ja.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">日本語</a>
+                  <a href="../coming-soon-cn.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">中文</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div id="mobile-menu-outer-bg" class="fixed inset-0 z-10 bg-black bg-opacity-25 backdrop-blur"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5 font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+                <p>Joshan S. Rai</p>
+              </a>
+              <button type="button" id="mobile-menu-close-button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="../index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                  <a href="../experience.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-sky-500 underline hover:bg-gray-50">Experience</a>
+                  <a href="../academia.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academia</a>
+                  <a href="../about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                  <a href="../contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                </div>
+                <div class="py-6">
+                  <div class="-mx-3">
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="mobile-language-dropdown" aria-expanded="false">
+                      Language
+                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <!-- 'Language' sub-menu, show/hide based on menu state. -->
+                    <div id="mobile-language-dropdown" class="hidden mt-2 space-y-2">
+                      <a href="../index.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+                      <a href="../coming-soon-ja.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">日本語</a>
+                      <a href="../coming-soon-cn.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">中文</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div class="w-[calc(100%-32px)] mx-auto md:w-[calc(70%)] lg:w-[calc(47%)] h-full">
+            <!-- Back Button Section -->
+            <section class="pt-10">
+                <div class="flex">
+                    <a class="flex items-center group w-auto" href="../experience.html">
+                        <div class="flex relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke="#2536EB" class="size-12 fill-gray-200 group-hover:fill-none">
+                                <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round" class="stroke-path" />
+                            </svg>      
+                            <div class="flex items-center justify-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                                </svg>  
+                            </div>                        
+                        </div>  
+                        <p class="ml-2 group-hover:underline">Back</p>            
+                    </a>
+                </div>
+            </section>
+            <!-- Header Section -->
+            <section class="py-10">
+                <div>
+                    <div class="flex flex-col items-center justify-center text-wrap">
+                        <header class="text-4xl font-medium mb-8 flex items-center justify-center text-wrap text-center">
+                            <h1>Freelance Work Experience</h1>
+                        </header>
+                        <div class="flex items-center justify-center gap-4">
+                            <p class="text-xs px-2 py-1 bg-blue-300 text-white rounded-l-full rounded-r-full">Experience</p>
+                            <p class="text-xs font-light text-gray-400">02/10/2021 - 08/01/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Divider Section -->
+            <section class="py-0">
+                <div class="w-full h-1 bg-gradient-to-r from-blue-300 from-40% via-purple-300 via-70% to-cyan-300"></div>
+            </section>
+            <!-- Content Section -->
+            <section class="py-10 mb-10">
+                <div>
+                    <div class="w-full h-72 lg:h-[calc(28rem)] mb-12">
+                        <img class="w-full h-full object-cover" src="../img/jsr-banner.png" alt="">
+                    </div>
+                    <div class="text-sm text-wrap">
+                        <div id="swe" class="py-3">
+                          <h2 class="text-base font-bold mb-2">Software Engineer</h2>
+                          <ul class="list-disc list-inside">
+                              <li>Engineered network connections and an AI neural network to develop a Digital Twin Metahuman AI, increasing customer engagement and retention by 12%.</li>
+                              <li>Developed marketing websites for businesses integrating Content Management Systems, improving SEO rank and click-through rate by 26%</li>
+                          </ul>
+                        </div>
+                        <div id="it-tech" class="py-3">
+                          <h2 class="text-base font-bold mb-2">IT Support Technician</h2>
+                          <ul class="list-disc list-inside">
+                              <li>Resolved network and device software/hardware issues on approximately 721 iOS, macOS, Windows, Android, and router/modem devices, which lead to an increased customer satisfaction rate by 16%</li>
+                              <li>Trained approximately 105 new users on the usage of smart devices and applications, increasing customer confidence and business sales by 12%</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       <!-- Footer Section -->
+       <footer class="bottom-0 py-10 px-5 flex items-center justify-center text-center bg-gray-950 text-white">
+        <p>Copyright © Joshan Singh Rai. All Rights Reserved.</p>
+      </footer>
+    </main>
+    <script src="../script.js"></script>
+    <script>
+        var path = document.querySelector('.stroke-path');
+        var length = path.getTotalLength();
+        console.log(length);
+    </script>
+</body>
+</html>

@@ -1,11 +1,14 @@
 # Changelog
 
-## v2.2.04
+## v2.3.04
 
 ### Added or Changed
-- Add 'text-center' to footer
+- Add 'amazon.html' to describe Amazon work experience
+- Add 'csustan.html' to describe CSU Stanislaus work experience
+- Add 'freelance.html' to describe Freelance work experience
+- Add 'Edutainment for iOS' to 'experience.html'
 
 ### Removed
 
 ### Bugs
-- Background is not fixed on mobile devices
+- Background image for certain sections are not attached in a fixed position on mobile devices, this is a known issue for mobile devices and will be addressed when a solution is tested and found. Temporarily, all 'bg-fixed' images have been given the prefix of 'lg:' so they only display on large screens and so that the background images look normal on mobile devices.
