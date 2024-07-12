@@ -3,7 +3,7 @@
 ## v2.3.04
 
 ### Added or Changed
-- Add 'hisd.html' to prepare description of Hillsboro Ex-Student Association Database
+- Add 'flex-col' and 'py-10 lg:py-0' and 'lg:w-1/2' to skills and interests portions of the page
 
 ### Removed
 
