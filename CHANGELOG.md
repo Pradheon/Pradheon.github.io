@@ -1,8 +1,13 @@
 # Changelog
 
-## v2.1.02
+## v2.2.03
 
 ### Added or Changed
-- Change 'Japanese' to '日本語' and 'Chinese' to '中文' in the language options
+- Change links for CTA section 'Experience' cards
+- Change font size in 'Coming Soon' pages
+- Change 'bg-fixed' to 'lg:bg-fixed'
 
 ### Removed
+
+### Bugs
+- Background is not fixed on mobile devices
