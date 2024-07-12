@@ -1,11 +1,9 @@
 # Changelog
 
-## v2.2.03
+## v2.2.04
 
 ### Added or Changed
-- Change links for CTA section 'Experience' cards
-- Change font size in 'Coming Soon' pages
-- Change 'bg-fixed' to 'lg:bg-fixed'
+- Add 'text-center' to footer
 
 ### Removed
 
