@@ -1,8 +1,8 @@
 # Changelog
 
-## v2.0.00
+## v2.1.01
 
 ### Added or Changed
-- Added icons
+- Change title of pages
 
 ### Removed
