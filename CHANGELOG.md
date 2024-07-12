@@ -3,10 +3,7 @@
 ## v2.3.04
 
 ### Added or Changed
-- Add 'amazon.html' to describe Amazon work experience
-- Add 'csustan.html' to describe CSU Stanislaus work experience
-- Add 'freelance.html' to describe Freelance work experience
-- Add 'Edutainment for iOS' to 'experience.html'
+- Add 'hisd.html' to prepare description of Hillsboro Ex-Student Association Database
 
 ### Removed
 
