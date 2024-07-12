@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        .stroke-path {
+            stroke-dasharray: 100; /* Dash pattern */
+            stroke-dashoffset: 100; /* Initial offset to hide the path */
+            transition: stroke-dashoffset 2s cubic-bezier(0, 0.5, 0.35, 1);
+        }
+    
+        .group:hover .stroke-path {
+            stroke-dashoffset: 0;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 250% -250%;
+            }
+            100% {
+                background-position: -250% 250%;
+            }
+        }
+
+        .animate-gradient {
+            background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899, #06b6d4, #3b82f6);
+            background-clip: text;
+            color: transparent;
+            background-size: 400% 400%;
+            animation: gradient 50s linear infinite;
+        }
+
+        .stroke-path {
+            stroke-dasharray: 63;
+            stroke-dashoffset: 63;
+            transition: stroke-dashoffset .6s cubic-bezier(0, 0.5, 0.35, 1);
+        }
+    
+        .group:hover .stroke-path {
+            stroke-dashoffset: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="w-full h-screen bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.jpg')] bg-cover bg-no-repeat bg-fixed">
+            <div class="flex flex-col items-center justify-center z-10 w-full h-full">
+                <div class="text-9xl font-extrabold flex mb-5">
+                    <h1 class="animate-gradient">
+                        近日公開
+                    </h1>
+                </div>
+                    <a class="flex items-center group w-auto px-5 py-3 text-white" href="index.html">
+                        <div class="flex relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" stroke="#2536EB" class="size-16 fill-gray-200/45 group-hover:fill-gray-200/65">
+                                <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round" class="stroke-path" />
+                            </svg>      
+                            <div class="flex items-center justify-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                                </svg>  
+                            </div>                        
+                        </div>  
+                        <p class="ml-2 group-hover:underline text-2xl">バック</p>            
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        var path = document.querySelector('.stroke-path');
+        var length = path.getTotalLength();
+        console.log(length);
+    </script>
+</body>
+</html>

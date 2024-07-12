@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="bg-white z-[calc(100)]">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="index.html" class="-m-1.5 p-1. font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+                <p>Joshan S. Rai</p>
+              </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" id="mobile-menu-button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500">Home</a>
+            <a href="experience.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Experience</a>
+            <a href="academia.html" class="text-sm font-semibold leading-6 text-sky-500 underline transition duration-300 ease-in-out">Academia</a>
+            <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">About</a>
+            <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Contact</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="relative">
+              <button id="language-dropdown-button" type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+                Language
+                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="language-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition duration-500 ease-in-out">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">English</a>
+                  <a href="coming-soon-ja.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Japanese</a>
+                  <a href="coming-soon-cn.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Chinese</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div id="mobile-menu-outer-bg" class="fixed inset-0 z-10 bg-black bg-opacity-25 backdrop-blur"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5 font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+                    <p>Joshan S. Rai</p>
+                  </a>
+              <button type="button" id="mobile-menu-close-button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                  <a href="experience.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Experience</a>
+                  <a href="academia.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-sky-500 underline hover:bg-gray-50">Academia</a>
+                  <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                  <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                </div>
+                <div class="py-6">
+                  <div class="-mx-3">
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="mobile-language-dropdown" aria-expanded="false">
+                      Language
+                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <!-- 'Language' sub-menu, show/hide based on menu state. -->
+                    <div id="mobile-language-dropdown" class="hidden mt-2 space-y-2">
+                      <a href="index.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+                      <a href="coming-soon-ja.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Japanese</a>
+                      <a href="coming-soon-cn.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Chinese</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <!-- Experience Hero Section -->
+        <section class="w-full h-[calc(32vh)] bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.jpg')] bg-cover bg-no-repeat bg-fixed">
+            <div class="flex items-center justify-start w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+                <header class="text-6xl font-bold text-white">
+                    <h1>Academia</h1>
+                </header>
+            </div>
+        </section>
+        <!-- Project Section -->
+        <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+            <div class="flex flex-col gap-4 w-full md:flex-row md:flex-wrap">
+                <div class="text-sm font-semibold mb-5 w-full">
+                    <div class="w-full flex justify-center items-center gap-2">
+                        <button class="relative m-0 px-3 rounded-l-full rounded-r-full transition ease-in-out duration-500 group bg-gradient-to-r from-sky-500 to-blue-500 text-white" onclick="filterSelection('all')">
+                            <div class="absolute inset-0 rounded-l-full rounded-r-full transition duration-500 ease-in-out opacity-0 bg-gradient-to-r from-sky-500 to-blue-500 group-hover:opacity-100"></div>
+                            <div class="relative group-hover:text-white">All</div>
+                        </button>
+                        <button class="relative m-0 px-3 rounded-l-full rounded-r-full transition ease-in-out duration-500 group" onclick="filterSelection('education')">
+                            <div class="absolute inset-0 rounded-l-full rounded-r-full transition duration-500 ease-in-out opacity-0 bg-gradient-to-r from-sky-500 to-blue-500 group-hover:opacity-100"></div>
+                            <div class="relative group-hover:text-white">Education</div>
+                        </button>
+                        <button class="relative m-0 px-3 rounded-l-full rounded-r-full transition ease-in-out duration-500 group" onclick="filterSelection('awards')">
+                            <div class="absolute inset-0 rounded-l-full rounded-r-full transition duration-500 ease-in-out opacity-0 bg-gradient-to-r from-sky-500 to-blue-500 group-hover:opacity-100"></div>
+                            <div class="relative group-hover:text-white">Awards</div>
+                        </button>
+                        <button class="relative m-0 px-3 rounded-l-full rounded-r-full transition ease-in-out duration-500 group" onclick="filterSelection('pub')">
+                            <div class="absolute inset-0 rounded-l-full rounded-r-full transition duration-500 ease-in-out opacity-0 bg-gradient-to-r from-sky-500 to-blue-500 group-hover:opacity-100"></div>
+                            <div class="relative group-hover:text-white">Publications</div>
+                        </button>                        
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between content-between w-full h-full md:flex-row md:flex-wrap gap-3 lg:gap-5">
+                    <!-- Card 1 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="./page/usv.html" data-category="education">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/usv.png" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/usv-logo.png" alt="University of Silicon Valley logo depicting a green dragon in a navy blue circle">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">B.S., Computer Science</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        University of Silicon Valley
+                                        <em class="text-gray-500 font-light">- 04/23/2023</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700">
+                                        <em>magna cum laude</em>, <strong>GPA:</strong> 3.96, President's Honor Roll
+                                        <!--Pres. ASB, Fdr./Pres. Anime Club, Fdr./Pres. GDSC, Amb. CS Dept.-->
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 1 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="./page/usv.html" data-category="awards">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/usv.png" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/usv-logo.png" alt="">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">Magna Cum Laude</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        University of Silicon Valley
+                                        <em class="text-gray-500 font-light">- 04/23/2023</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700"><strong>GPA:</strong> 3.96</p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 1 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="./page/usv.html" data-category="awards">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/usv.png" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/usv-logo.png" alt="">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">President's Honor Roll</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        University of Silicon Valley
+                                        <em class="text-gray-500 font-light">- 04/23/2023</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700"><strong>GPA:</strong> 3.96</p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="https://docs.google.com/document/d/1oZaF4hEgzAl8STvYbNIXKKherMH9X8MGK0HjYxIBdY8/edit?usp=sharing" target="_blank" rel="noopener" data-category="pub">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/usv-logo.png" alt="">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">Privacy & Security: Ethics, Dangers, and Improvements in Modern Technology</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        University of Silicon Valley
+                                        <em class="text-gray-500 font-light">– 02/18/2023</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700">
+                                        
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 1 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="https://docs.google.com/document/d/1bxyYHnXFfRJVxGsobcpi_NmN9H97lhsY711q4vtMqco/edit?usp=sharing" target="_blank" rel="noopener" data-category="pub">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/sony.png" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/usv-logo.png" alt="">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">Political Economic Impacts of Sony Corporation</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        University of Silicon Valley
+                                        <em class="text-gray-500 font-light">– 08/19/2022</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700">
+                                        
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a class="rounded-lg overflow-clip w-full h-auto md:h-[calc(17rem)] lg:h-[calc(25rem)] md:w-[calc(49%)] group" href="./page/ghs.html" data-category="education">
+                        <div class="flex flex-col h-full">
+                            <div class="flex-grow overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:transform-gpu group-hover:scale-110 transition ease-in-out duration-1000" src="./img/ghs.png" alt="">
+                            </div>
+                            <div class="flex flex-row items-center bg-gray-100 px-2 py-3 md:p-3 flex-shrink-0">
+                                <img class="w-10 h-10 rounded-md lg:w-20 lg:h-20" src="./img/ghs-logo.png" alt="Joseph A. Gregori High School logo depiciting a jaguar's face">
+                                <div class="pl-3 pr-0 text-sm w-60 h-full text-wrap lg:w-72">
+                                    <h2 class="pb-1 group-hover:underline">High School Diploma</h2>
+                                    <p class="text-xs text-gray-900 font-medium">
+                                        Joseph A. Gregori High School
+                                        <em class="text-gray-500 font-light">- 05/10/2020</em>
+                                    </p>
+                                    <p class="text-xs text-gray-700">PLTW, Advanced Placement (AP), SAT</p>
+                                </div>
+                                <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-l-full rounded-r-full px-6 py-2 md:px-12 md:py-3 ml-auto text-white">
+                                    <p class="text-xs md:text-sm">More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action Section -->
+        <section class="relative h-full bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.jpg')] bg-cover bg-no-repeat bg-fixed">
+            <!-- Cards -->
+           <div class="w-[calc(100%-32px)] mx-auto py-10 flex flex-col gap-4 md:w-[calc(70%)] md:flex-row lg:py-16 lg:w-[calc(63%)]">
+               <!-- Card 1 -->
+               <a class="w-full h-full" href="about.html">
+                   <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-out hover:bg-white group">
+                       <div class="flex flex-col w-full px-3 py-5 lg:px-5 lg:py-8">
+                           <div class="mb-5 md:mb-3">
+                               <h1 class="text-2xl group-hover:text-gray-700 lg:text-3xl">About</h1>
+                               <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mb-5 lg:mt-5 lg:mb-7">
+                               <p class="text-gray-400 group-hover:text-gray-600 md:text-sm lg:text-base">Learn more about me.</p>
+                           </div>
+                           <div class="ml-auto">
+                               <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-full w-12 h-12 md:w-10 md:h-10 lg:w-14 lg:h-14 text-white">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                   </svg> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </a>
+               <!-- Card 2 -->
+               <a class="w-full h-full " href="about.html">
+                   <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-out hover:bg-white group">
+                       <div class="flex flex-col w-full px-3 py-5 lg:px-5 lg:py-8">
+                           <div class="mb-5 md:mb-3">
+                               <h1 class="text-2xl group-hover:text-gray-700 lg:text-3xl">Experience</h1>
+                               <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mb-5 lg:mt-5 lg:mb-7">
+                               <p class="text-gray-400 group-hover:text-gray-600 md:text-sm lg:text-base">Learn more about me.</p>
+                           </div>
+                           <div class="ml-auto">
+                               <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-full w-12 h-12 md:w-10 md:h-10 lg:w-14 lg:h-14 text-white">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                   </svg> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </a>
+           </div>
+       </section>
+       <!-- Footer Section -->
+       <footer class="bottom-0 py-10 px-5 flex items-center justify-center bg-gray-950 text-white">
+        <p>Copyright © Joshan Singh Rai. All Rights Reserved.</p>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

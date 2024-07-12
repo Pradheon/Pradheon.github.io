@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="bg-white z-[calc(100)]">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="index.html" class="-m-1.5 p-1. font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+                <p>Joshan S. Rai</p>
+              </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" id="mobile-menu-button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500">Home</a>
+            <a href="experience.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Experience</a>
+            <a href="academia.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Academia</a>
+            <a href="about.html" class="text-sm font-semibold leading-6 text-sky-500 underline transition duration-300 ease-in-out">About</a>
+            <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900 hover:underline hover:text-sky-500 transition duration-300 ease-in-out">Contact</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div class="relative">
+              <button id="language-dropdown-button" type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+                Language
+                <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="language-dropdown-menu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition duration-500 ease-in-out">
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">English</a>
+                  <a href="coming-soon-ja.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Japanese</a>
+                  <a href="coming-soon-cn.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Chinese</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div id="mobile-menu-outer-bg" class="fixed inset-0 z-10 bg-black bg-opacity-25 backdrop-blur"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5 font-bold hover:text-sky-500 transition-all duration-300 ease-in-out">
+                    <p>Joshan S. Rai</p>
+                  </a>
+              <button type="button" id="mobile-menu-close-button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                  <a href="experience.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Experience</a>
+                  <a href="academia.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Academia</a>
+                  <a href="about.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-sky-500 underline hover:bg-gray-50">About</a>
+                  <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                </div>
+                <div class="py-6">
+                  <div class="-mx-3">
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="mobile-language-dropdown" aria-expanded="false">
+                      Language
+                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <!-- 'Language' sub-menu, show/hide based on menu state. -->
+                    <div id="mobile-language-dropdown" class="hidden mt-2 space-y-2">
+                      <a href="index.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">English</a>
+                      <a href="coming-soon-ja.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Japanese</a>
+                      <a href="coming-soon-cn.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Chinese</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <!-- About Hero Section -->
+        <section class="w-full h-[calc(32vh)] bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.jpg')] bg-cover bg-no-repeat bg-fixed">
+            <div class="flex items-center justify-start w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+                <header class="text-6xl font-bold text-white">
+                    <h1>About Me</h1>
+                </header>
+            </div>
+        </section>
+        <!-- Mission Section -->
+        <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+            <div>
+                <div>
+                    <header class="text-2xl font-bold mb-5 flex items-end justify-between">
+                        <h2>Mission</h2>
+                    </header>
+                    <p>To provide the best experiences, products, and services with an exceptionally innovative approach driven by excellence, curiosity, and resilience.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Vision Section -->
+        <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+            <div>
+                <div>
+                    <header class="text-2xl font-bold mb-5 flex items-end justify-between">
+                        <h2>Vision</h2>
+                    </header>
+                    <p>To develop extraordinary products, transcending in all aspects.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Values Section -->
+        <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full">
+            <div class="">
+                <header class="text-2xl font-bold mb-5 flex items-end justify-between">
+                    <h2 class="">Values</h2>
+                </header>
+                <ul class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Privacy</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Protecting your privacy and giving you control over your data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Accessibility</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Design products and tools with seamless usability for everyone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Environment</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Improve environmental stability by reducing harmful emissions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Education</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Learn and teach to develop opportunities for all.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Excellence</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Diligently striving to improve and go above and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Curiosity</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Continually asking questions, seeking answers, and diving deeper.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Resilience</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Never giving up.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-full h-full md:w-[calc(49%)]">
+                        <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-ou">
+                            <div class="flex flex-col w-full px-3 py-5 md:px-5 md:py-7">
+                                <div class="mb-5">
+                                    <h1 class="text-2xl text-gray-700">Transcend</h1>
+                                    <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mt-5 md:mb-7">
+                                    <p class="text-gray-600">Pursue above optimal outcomes and exceptional innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Mission Section -->
+        <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)] h-full pb-20">
+            <div class="flex w-full">
+                <div class="w-1/2 px-2">
+                    <header class="text-2xl font-bold mb-5 flex items-end justify-between">
+                        <h2>Skills</h2>
+                    </header>
+                    <ul class="list-disc list-inside">
+                        <li class="text-xl font-semibold">Software Development</li>
+                        <li class="ml-10"><u>Web:</u> HTML, CSS, JavaScript, React.js, TypeScript, JSON, Node.js, SQL</li>
+                        <li class="ml-10"><u>Mobile:</u> Swift, SwiftUI, Kotlin, React.js</li>
+                        <li class="ml-10"><u>General:</u> Python, C++, C</li>
+                        <li class="ml-10"><u>Scripting:</u> Bash</li>
+                        <li class="text-xl font-semibold">Tools</li>
+                        <li class="ml-10">Git, GitHub</li>
+                        <li class="text-xl font-semibold">Frameworks & Libraries</li>
+                        <li class="ml-10"><u>CMS:</u> Sanity, Drupal, Wordpress, Strapi</li>
+                        <li class="ml-10"><u>Web:</u> Tailwind, Bootstrap</li>
+                        <li class="ml-10"><u>Other:</u> PyGame</li>
+                        <li class="text-xl font-semibold">Other</li>
+                        <li class="ml-10"><u>Languages:</u> English, Punjabi, Japanese, Chinese (learning), Spanish (learning)</li>
+                        <li class="ml-10"><u>Operating Systems:</u> macOS, iOS, Windows, Android, LINUX, UNIX</li>
+                        <li class="ml-10"><u>Other:</u> Customer retention, leadership, sales, data analysis, design thinking, teamwork, Office365, Google Suite, Artifical Intelligence, Digital Twinning, Big Data</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 px-2">
+                    <header class="text-2xl font-bold mb-5 flex items-end justify-between">
+                        <h2>Interests</h2>
+                    </header>
+                    <ul class="list-disc list-inside">
+                        <li>Anime</li>
+                        <li class="ml-10"><u>Some of my favorites are:</u> Code Geass, Bungou Stray Dogs, Demon Slayer, Akudama Drive, Konosuba, Mushoku Tensei, and Re:Zero</li>
+                        <li>Video Games</li>
+                        <li class="ml-10"><u>Some of my favorites are:</u> NieR: Automata, Yakuza 0, Honkai Impact 3rd, Honkai: Star Rail, Zenless Zone Zero, Ghost of Tsushima, No Man's Sky, and Elden Ring</li>
+                        <li>GT, Formula One, and NASCAR Racing</li>
+                        <li>Manga, Light Novels, Novels</li>
+                        <li>Classical, J-Pop, J-Rock, '80s, '90s, and Video Game music</li>
+                        <li class="ml-10"><u>Some of my favorites are:</u> BAND-MAID</li>
+                        <li>Movies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action Section -->
+        <section class="relative h-full bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.jpg')] bg-cover bg-no-repeat bg-fixed">
+            <!-- Cards -->
+           <div class="w-[calc(100%-32px)] mx-auto py-10 flex flex-col gap-4 md:w-[calc(70%)] md:flex-row lg:py-16 lg:w-[calc(63%)]">
+               <!-- Card 1 -->
+               <a class="w-full h-full" href="about.html">
+                   <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-out hover:bg-white group">
+                       <div class="flex flex-col w-full px-3 py-5 lg:px-5 lg:py-8">
+                           <div class="mb-5 md:mb-3">
+                               <h1 class="text-2xl group-hover:text-gray-700 lg:text-3xl">About</h1>
+                               <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mb-5 lg:mt-5 lg:mb-7">
+                               <p class="text-gray-400 group-hover:text-gray-600 md:text-sm lg:text-base">Learn more about me.</p>
+                           </div>
+                           <div class="ml-auto">
+                               <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-full w-12 h-12 md:w-10 md:h-10 lg:w-14 lg:h-14 text-white">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                   </svg> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </a>
+               <!-- Card 2 -->
+               <a class="w-full h-full " href="experience.html">
+                   <div class="bg-gradient-to-br from-indigo-500/20 to-sky-500/20 bg-opacity-30 backdrop-blur rounded-lg text-white transition-colors duration-500 ease-in-out hover:bg-white group">
+                       <div class="flex flex-col w-full px-3 py-5 lg:px-5 lg:py-8">
+                           <div class="mb-5 md:mb-3">
+                               <h1 class="text-2xl group-hover:text-gray-700 lg:text-3xl">Experience</h1>
+                               <hr class="w-5 border-2 border-blue-500 mt-3 mb-6 md:mb-5 lg:mt-5 lg:mb-7">
+                               <p class="text-gray-400 group-hover:text-gray-600 md:text-sm lg:text-base">Learn more about me.</p>
+                           </div>
+                           <div class="ml-auto">
+                               <div class="flex items-center justify-center bg-gradient-to-r from-sky-500 to-blue-500 rounded-full w-12 h-12 md:w-10 md:h-10 lg:w-14 lg:h-14 text-white">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                   </svg> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </a>
+           </div>
+       </section>
+       <!-- Footer Section -->
+       <footer class="bottom-0 py-10 px-5 flex items-center justify-center bg-gray-950 text-white">
+        <p>Copyright © Joshan Singh Rai. All Rights Reserved.</p>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
