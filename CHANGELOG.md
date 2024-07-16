@@ -1,11 +1,11 @@
 # Changelog
 
-## v2.4.18
+## v2.4.19
 
 ### Added or Changed
+- Move script for vh calculation to head of document
 
 ### Removed
-- Remove the onload event listener for the hero vh calculation script
 
 
 ### Bugs
