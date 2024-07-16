@@ -1,11 +1,11 @@
 # Changelog
 
-## v2.4.17
+## v2.4.18
 
 ### Added or Changed
-- Change the vh using JS for mobile for the hero section
 
 ### Removed
+- Remove the onload event listener for the hero vh calculation script
 
 
 ### Bugs
