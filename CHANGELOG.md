@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.10
+## v2.4.11
 
 ### Added or Changed
-- Add 'index.html' to mobile menu link where it displays my name so users will be redirected to the home page when clicking on mobile
+- Changed animated scroll indicator to be visible on large screens only
 
 ### Removed
 
