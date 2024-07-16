@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.11
+## v2.4.12
 
 ### Added or Changed
-- Changed animated scroll indicator to be visible on large screens only
+- Changed active link color on 'contact.html' from 'about' to 'contact'
 
 ### Removed
 
