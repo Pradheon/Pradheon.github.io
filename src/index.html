@@ -14,16 +14,56 @@
     <meta name="msapplication-config" content="./img/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <script>
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        window.addEventListener('resize', () => {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        })
+        !function(){
+            let maxHeight, minHeight, currentMode;
+
+            const resetValues = () => {
+                maxHeight = 0;
+                minHeight = Number.MAX_SAFE_INTEGER;
+                currentMode = 0;
+            };
+
+            resetValues();
+
+            const updateValues = () => {
+                const windowHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                const windowWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+                const mode = windowWidth >= windowHeight ? 1 : 2;
+
+                if (mode !== currentMode) {
+                    resetValues();
+                }
+
+                currentMode = mode;
+
+                if (windowHeight > maxHeight) {
+                    maxHeight = windowHeight;
+                }
+
+                if (windowHeight < minHeight) {
+                    minHeight = windowHeight;
+                }
+
+                const rootStyle = document.documentElement.style;
+                rootStyle.setProperty("--vh", `${windowHeight / 100}px`);
+                rootStyle.setProperty("--vh-max", `${maxHeight / 100}px`);
+                rootStyle.setProperty("--vh-min", `${minHeight / 100}px`);
+                rootStyle.setProperty("--vw-width", `${windowWidth}px`);
+            };
+
+            window.addEventListener("resize", updateValues);
+            updateValues();
+
+            console.log(minHeight)
+        }();
     </script>
     <style>
-        #hero {
-            height: calc(var(--vh, 1vh) * 100);
+
+        @media (max-width: 1024px) {
+            #hero {
+                height: calc(100 * var(--vh-min, 1vh));
+            }
         }
 
         @keyframes gradient {
@@ -411,10 +451,5 @@
         </footer>
     </main>
     <script src="script.js"></script>
-    <script>
-        var path = document.querySelector('.stroke-path');
-        var length = path.getTotalLength();
-        console.log(length);
-    </script>
 </body>
 </html>

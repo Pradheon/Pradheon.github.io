@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.19
+## v2.4.20
 
 ### Added or Changed
-- Move script for vh calculation to head of document
+- Add script to calculate vh
 
 ### Removed
 
