@@ -3,8 +3,7 @@
 ## v2.3.04
 
 ### Added or Changed
-- Change text for "Experience" CTA card
-- Change CTA cards on about.html
+- Add mouse and animated line SVG to index.html in the hero section to indicate user to scroll down
 
 ### Removed
 
