@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.15
+## v2.4.16
 
 ### Added or Changed
-- Change 'h-screen' in hero section to calculated 90vh value for mobile
+- Change calculated 90vh value in hero section to 'h-dvh' value for mobile
 
 ### Removed
 
