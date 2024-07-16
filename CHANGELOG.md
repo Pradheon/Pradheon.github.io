@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.17
+## v2.4.16
 
 ### Added or Changed
-- Change 'h-dvh' value in hero section to 'h-svh' value for mobile
+- Change calculated 90vh value in hero section to 'h-dvh' value for mobile
 
 ### Removed
 
