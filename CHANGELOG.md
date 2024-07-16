@@ -3,7 +3,8 @@
 ## v2.3.04
 
 ### Added or Changed
-- Add 'flex-col' and 'py-10 lg:py-0' and 'lg:w-1/2' to skills and interests portions of the page
+- Change text for "Experience" CTA card
+- Change CTA cards on about.html
 
 ### Removed
 
