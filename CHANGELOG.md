@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.3.04
+## v2.4.10
 
 ### Added or Changed
-- Add mouse and animated line SVG to index.html in the hero section to indicate user to scroll down
+- Add 'index.html' to mobile menu link where it displays my name so users will be redirected to the home page when clicking on mobile
 
 ### Removed
 
