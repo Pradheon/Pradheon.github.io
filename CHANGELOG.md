@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.4.14
+## v2.4.15
 
 ### Added or Changed
-- Change calculated height in hero section to 100vh for mobile
+- Change 'h-screen' in hero section to calculated 90vh value for mobile
 
 ### Removed
 
