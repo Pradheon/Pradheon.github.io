@@ -1,9 +1,11 @@
 # Changelog
 
-## v2.4.20
+## v2.5.20
 
 ### Added or Changed
-- Add script to calculate vh
+- Add transcript link in usv.html
+- Add USV transcript card in academia.html
+- Change link attributes for hisd card in experience.html to not open in a new tab
 
 ### Removed
 
