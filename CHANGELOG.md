@@ -1,11 +1,10 @@
 # Changelog
 
-## v2.5.20
+## v2.6.20
 
 ### Added or Changed
-- Add transcript link in usv.html
-- Add USV transcript card in academia.html
-- Change link attributes for hisd card in experience.html to not open in a new tab
+- Add page and social links to footer
+- Add github and linkedin logo files
 
 ### Removed
 
