@@ -1,15 +1,12 @@
 # Changelog
 
-## v2.7.20
+## v2.8.22
 
 ### Added or Changed
-- Change the height of cards in the values section in about.html
-- Add cards for skills and interests in about.html
-- Add sponsors and affiliates section in about.html
-- Change footer padding for social icons div from 'py-5' to 'pb-5'
+- Add fixed height to CTA cards
+- Change text in cards in about.html
 
 ### Removed
-- Removed the text-based skills and interests section in about.html
 
 
 ### Bugs
