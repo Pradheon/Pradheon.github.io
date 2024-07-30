@@ -1,10 +1,9 @@
 # Changelog
 
-## v2.8.22
+## v2.8.25
 
 ### Added or Changed
-- Add fixed height to CTA cards
-- Change text in cards in about.html
+- Changed the text color of sub-text on sub-pages
 
 ### Removed
 
