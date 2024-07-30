@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.8.26
+## v2.8.27
 
-### Added or Changed
-- Changed the text color of links in usv.html
+### Added, Changed, or Fixed
+- Fixed an issue where images weren't loading in the footer due to incorrect file path
 
 ### Removed
 
