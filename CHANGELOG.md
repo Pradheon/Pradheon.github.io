@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.8.25
+## v2.8.26
 
 ### Added or Changed
-- Changed the text color of sub-text on sub-pages
+- Changed the text color of links in usv.html
 
 ### Removed
 
