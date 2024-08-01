@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.8.27
+## v2.9.30
 
 ### Added, Changed, or Fixed
-- Fixed an issue where images weren't loading in the footer due to incorrect file path
+- Fixed an issue where sub-pages were redirecting to an incorrect home page
 
 ### Removed
 
