@@ -59,48 +59,9 @@
         }();
     </script>
     <style>
-
         @media (max-width: 1024px) {
             #hero {
                 height: calc(100 * var(--vh-min, 1vh));
-            }
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 250% -250%;
-            }
-            100% {
-                background-position: -250% 250%;
-            }
-        }
-
-        .animate-gradient {
-            background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899, #06b6d4, #3b82f6);
-            background-clip: text;
-            color: transparent;
-            background-size: 400% 400%;
-            animation: gradient 50s linear infinite;
-        }
-
-        .stroke-path {
-            stroke-dasharray: 0;
-            stroke-dashoffset: 0;
-            animation: dash 3s 0s infinite;
-        }
-
-        @keyframes dash {
-            0% {
-                transform: translateY(-200%);
-            }
-            50% {
-                transform: translateY(0%);
-            }
-            51% {
-                transform: translateY(0%);
-            }
-            100% {
-                transform: translateY(290%);
             }
         }
     </style>
@@ -210,7 +171,7 @@
                             <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5"/>
                         </svg>                            
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 40" stroke-width="2" stroke="currentColor" class="w-8 h-24 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 -18V60" class="stroke-path" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 -18V60" class="stroke-path-dash" />
                         </svg>                      
                     </div>
                 </div>
