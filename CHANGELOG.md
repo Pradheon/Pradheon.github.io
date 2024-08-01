@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.9.30
+## v2.9.40
 
 ### Added, Changed, or Fixed
-- Fixed an issue where sub-pages were redirecting to an incorrect home page
+- Changed content in sub-pages to be mroe accurate
 
 ### Removed
 
