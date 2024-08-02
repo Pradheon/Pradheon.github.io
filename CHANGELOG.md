@@ -1,9 +1,10 @@
 # Changelog
 
-## v2.11.56
+## v2.12.56
 
 ### Added, Changed, or Fixed
-- Added meta description and keywords to the head of index.html to comply with Google SEO and lighthouse reporting
+- Added span elements with more descriptive text to cards to improve accessibility.
+- Changed the color of the 'More' text in the buttons next to section headers to a darker blue to improve accessibility.
 
 ### Removed
 
