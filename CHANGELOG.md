@@ -1,10 +1,9 @@
 # Changelog
 
-## v2.12.56
+## v2.13.56
 
 ### Added, Changed, or Fixed
-- Added span elements with more descriptive text to cards to improve accessibility.
-- Changed the color of the 'More' text in the buttons next to section headers to a darker blue to improve accessibility.
+- Added sitemap.xml and robots.txt
 
 ### Removed
 

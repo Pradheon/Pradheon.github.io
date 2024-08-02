@@ -1,0 +1,4 @@
+user-agent: *
+allow: /
+
+sitemap: https://joshansrai.pages.dev/sitemap.xml
