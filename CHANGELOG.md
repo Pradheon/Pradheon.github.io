@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.10.52
+## v2.10.53
 
 ### Added, Changed, or Fixed
-- Fixed an issue where WEBP images weren't loading
+- Changed the file size of LCPs to reduce load times
 
 ### Removed
 
