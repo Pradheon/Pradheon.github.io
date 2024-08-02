@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.10.56
+## v2.11.56
 
 ### Added, Changed, or Fixed
-- Changed the file size of LCPs to reduce load times
+- Added meta description and keywords to the head of index.html to comply with Google SEO and lighthouse reporting
 
 ### Removed
 
