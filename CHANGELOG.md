@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.10.50
+## v2.10.51
 
 ### Added, Changed, or Fixed
-- Added lazy loading to images in all pages to improve page load times
+- Change large contenful images from JPG to WEBP to improve page load times.
 
 ### Removed
 
