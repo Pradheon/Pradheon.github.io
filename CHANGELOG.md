@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.10.55
+## v2.10.56
 
 ### Added, Changed, or Fixed
 - Changed the file size of LCPs to reduce load times
