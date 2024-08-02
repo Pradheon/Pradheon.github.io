@@ -1,9 +1,9 @@
 # Changelog
 
-## v2.10.51
+## v2.10.52
 
 ### Added, Changed, or Fixed
-- Change large contenful images from JPG to WEBP to improve page load times.
+- Fixed an issue where WEBP images weren't loading
 
 ### Removed
 
