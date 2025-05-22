@@ -1,5 +1,5 @@
-joshansrai.pages.dev or pradheon.github.io are both a personal portfolio website under
-a shared domain name of joshansrai.pages.dev hosted by Cloudflare Pages and/or
+joshansrai.pages.dev or pradheon.github.io or jsrai.me are both a personal portfolio website under
+a shared domain name of jsrai.me hosted by Cloudflare Pages and/or
 Github Pages to display works from and information about Joshan Singh Rai.
     Copyright (C) 2020-2024 Joshan Singh Rai
 

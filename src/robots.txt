@@ -1,4 +1,4 @@
 user-agent: *
 allow: /
 
-sitemap: https://joshansrai.pages.dev/sitemap.xml
+sitemap: https://jsrai.me/sitemap.xml
