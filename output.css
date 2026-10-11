@@ -1281,6 +1281,11 @@ video {
   fill: rgb(229 231 235 / 0.45);
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
