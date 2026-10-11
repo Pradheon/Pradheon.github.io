@@ -73,5 +73,6 @@
 
   @media (prefers-reduced-motion: reduce) {
     .more-btn svg rect { transition: none; }
+    #divider img { position: absolute; }
   }
 }

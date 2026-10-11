@@ -284,10 +284,14 @@
             </section>
         </div>
         <!-- Section Divider -->
-        <section id="divider" class="h-56 bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.webp')] bg-cover bg-no-repeat lg:bg-fixed">
-            <div class="flex w-full h-full items-center justify-center">
-                <img class="w-auto h-24" src="./img/jsr-logo.png" alt="" loading="lazy">
-            </div>
+        <section id="divider" class="relative h-56 lg:h-72 overflow-hidden bg-gray-950">
+            <div id="divider-stars"
+                class="absolute inset-x-0 top-0 h-[160%] bg-[url('./img/kai-pilger-Ef6iL87-vOA-unsplash.webp')] bg-cover bg-center bg-no-repeat will-change-transform"
+                style="transform: translateY(-30%);"></div>
+            <img id="divider-logo"
+                class="absolute left-1/2 top-1/2 h-48 lg:h-72 w-auto max-w-none will-change-transform pointer-events-none"
+                style="transform: translate(-50%, -50%);"
+                src="./img/jsr-logo.png" alt="" loading="lazy">
         </section>
         <!-- Latest Updates Section -->
         <section class="w-[calc(100%-32px)] mx-auto py-10 md:w-[calc(70%)] lg:w-[calc(63%)]">

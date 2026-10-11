@@ -68,3 +68,44 @@ document.addEventListener("DOMContentLoaded", function () {
             filterSelection('all');
             setActiveButton(allButton);
 });
+
+const dividerBand = document.getElementById('divider');
+const dividerLogo = document.getElementById('divider-logo');
+const dividerStars = document.getElementById('divider-stars');
+
+if (dividerBand && dividerLogo && dividerStars) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let ticking = false;
+
+  const update = () => {
+    const vh = window.innerHeight;
+    const rect = dividerBand.getBoundingClientRect();
+
+    // 0 = band entering at the bottom of the screen, 1 = band leaving at the top
+    const t = reduceMotion
+      ? 0.5
+      : Math.min(1, Math.max(0, (vh - rect.top) / (vh + rect.height)));
+
+    // Logo: drifts from above the band to below it
+    const logoRange = (rect.height + dividerLogo.offsetHeight) / 2;
+    const logoY = (t - 0.5) * 2 * logoRange;
+    dividerLogo.style.transform = `translate(-50%, calc(-50% + ${logoY}px))`;
+
+    // Stars: the layer is 160% of the band tall, so it can shift by up to 60% of the band height
+    const starsY = -0.6 * rect.height * (1 - t);
+    dividerStars.style.transform = `translateY(${starsY}px)`;
+
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+}
