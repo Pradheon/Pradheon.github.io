@@ -299,8 +299,10 @@
                 <div class="flex items-stretch">
                     <h1 class="m-0">Latest Updates</h1>
                 </div>
-                <a class="flex items-center justify-center border border-transparent bg-gray-200 hover:bg-white hover:border-blue-500 rounded-l-full rounded-r-full px-6 py-2 ml-auto text-xs font-normal text-blue-800 transition-all duration-300 ease-in-out"
-                href="experience.html">
+                <a class="more-btn h-8 text-xs" href="experience.html">
+                    <svg class="absolute inset-0 w-full h-full overflow-visible pointer-events-none" aria-hidden="true">
+                        <rect width="100%" height="100%" rx="16" ry="16" fill="none" stroke="#3b82f6" stroke-width="1" pathLength="100" />
+                    </svg>
                     More
                 </a>
             </header>
@@ -308,68 +310,69 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 auto-rows-[14rem] lg:auto-rows-[18rem]">
 
                 <!-- Row 1, card 1 -->
-                <a href="" class="group relative rounded-lg overflow-hidden">
+                <a href="western-digital.html" class="group relative rounded-lg overflow-hidden">
+                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/USDOL-CCA-IndManufTech.jpg" alt="United States Department of Labor Certificate of Completion of Apprenticeship in Industrial Manufacturing Technician" loading="lazy">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
+                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <p class="text-sm font-semibold">U.S. Department of Labor</p>
+                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">CCA in Industrial Manufacturing Technician</h2>
+                    </div>
+                </a>
+
+                <!-- Row 1, card 2 -->
+                <a href="western-digital.html" class="group relative rounded-lg overflow-hidden">
+                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/CA-CCA-SemiMaufOp.jpg" alt="State of California Certificate of Completion of Apprenticeship in Semiconductor Manufacturing Operator" loading="lazy">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
+                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <p class="text-sm font-semibold">State of California</p>
+                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">CCA in Semiconductor Manufacturing Operator</h2>
+                    </div>
+                </a>
+
+                <!-- Row 1, card 3 (wide) -->
+                <a href="foothill.html" class="group relative rounded-lg overflow-hidden sm:col-span-2">
+                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/fhda-cca-semiprocess.jpg" alt="Foothill College Certificate of Achievement in Semiconductor Processing" loading="lazy">
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
+                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
+                        <p class="text-sm font-semibold">Foothill College</p>
+                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">CoA in Semiconductor Processing</h2>
+                    </div>
+                </a>
+
+                <!-- Row 2: four equal cards -->
+                <a href="forage.html" class="group relative rounded-lg overflow-hidden">
                     <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/aws-solutions-architecture-cert-forage.jpg" alt="AWS APAC Solutions Architecture certificate" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
                     <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
                         <p class="text-sm font-semibold">AWS</p>
                         <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">AWS APAC Solutions Architecture</h2>
                     </div>
                 </a>
 
-                <!-- Row 1, card 2 -->
-                <a href="" class="group relative rounded-lg overflow-hidden">
+                <a href="forage.html" class="group relative rounded-lg overflow-hidden">
                     <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/cognizant-ai-cert-forage.jpg" alt="Cognizant Artificial Intelligence certificate" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
                     <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
                         <p class="text-sm font-semibold">Cognizant</p>
                         <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">Cognizant Artificial Intelligence</h2>
                     </div>
                 </a>
 
-                <!-- Row 1, card 3 (wide) -->
-                <a href="" class="group relative rounded-lg overflow-hidden sm:col-span-2">
+                <a href="forage.html" class="group relative rounded-lg overflow-hidden">
                     <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/jpmorgan-se-cert-forage.jpg" alt="J.P. Morgan Software Engineering certificate" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
                     <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
                         <p class="text-sm font-semibold">J.P. Morgan</p>
                         <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">J.P. Morgan Software Engineering</h2>
                     </div>
                 </a>
 
-                <!-- Row 2: four equal cards -->
-                <a href="" class="group relative rounded-lg overflow-hidden">
+                <a href="forage.html" class="group relative rounded-lg overflow-hidden">
                     <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/mastercard-cybersecurity-cert-forage.jpg" alt="Mastercard Cybersecurity certificate" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
+                    <span class="absolute top-2 right-2 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full rounded-r-full">Forage</span>
                     <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
                         <p class="text-sm font-semibold">Mastercard</p>
                         <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">Mastercard Cybersecurity</h2>
-                    </div>
-                </a>
-
-                <a href="" class="group relative rounded-lg overflow-hidden">
-                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/card-5.jpg" alt="" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
-                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
-                        <p class="text-sm font-semibold">Company</p>
-                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">Certificate title</h2>
-                    </div>
-                </a>
-
-                <a href="" class="group relative rounded-lg overflow-hidden">
-                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/card-6.jpg" alt="" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-teal-400 text-white text-xs px-3 py-0.5 rounded-l-full">Forage</span>
-                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
-                        <p class="text-sm font-semibold">Company</p>
-                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">Certificate title</h2>
-                    </div>
-                </a>
-
-                <a href="" class="group relative rounded-lg overflow-hidden">
-                    <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition ease-in-out duration-1000" src="./img/card-7.jpg" alt="" loading="lazy">
-                    <span class="absolute top-2 right-0 bg-blue-400 text-white text-xs px-3 py-0.5 rounded-l-full">Other</span>
-                    <div class="absolute inset-x-0 bottom-0 p-3 pt-12 bg-gradient-to-t from-black/80 to-transparent text-white">
-                        <h2 class="text-xs font-bold line-clamp-2 group-hover:underline">Certificate title</h2>
                     </div>
                 </a>
             </div>
